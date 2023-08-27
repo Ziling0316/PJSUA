@@ -37,8 +37,10 @@
 #define RING_FREQ2          640
 #define RING_ON             200
 #define RING_OFF            100 
+/************************  modify-louise   ***************************/
 #define RING_CNT            10   // 0826 origin:3 => 改變beep頻率
 #define RING_INTERVAL       3000 // 0826 origin:3000 => 一段 beep 間隔
+/************************  end   ***************************/
 
 #define current_acc     pjsua_acc_get_default()
 
