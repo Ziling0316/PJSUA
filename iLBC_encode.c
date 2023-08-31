@@ -127,21 +127,21 @@
                    data, (*iLBCenc_inst).hpimem);
        
        switch (frequency_index) {
-       case -2:  /*更低沉聲音*/
+       case 1:  /*更低沉聲音*/
            bass = 3;
            d = malloc(sizeof(float) * (BLOCKL_MAX * 3));
            break;
-       case -1:  /*低沉聲音*/
+       case 2:  /*低沉聲音*/
            bass = 2;
            d = malloc(sizeof(float) * (BLOCKL_MAX * 2));
            break;
-       case 1:   /*正常聲音*/
+       case 0:   /*正常聲音*/
            d = malloc(sizeof(float) * (BLOCKL_MAX));
            break;
-       case 2:   /*高亢聲音*/
+       case 3:   /*高亢聲音*/
            d = malloc(sizeof(float)*(BLOCKL_MAX / 2));
            break;
-       case 3:   /*更高亢聲音*/ 
+       case 4:   /*更高亢聲音*/ 
            d = malloc(sizeof(float) * (BLOCKL_MAX / 3));
            break;
        }
