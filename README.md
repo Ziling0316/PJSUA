@@ -1,25 +1,18 @@
 # 變聲器
 ## 用途
-
-- 可以根據使用者選擇的聲音做音頻的變化，改變使用者說話的聲音
+- 使用者可選擇想要的聲音做相對的頻率改變，改變使用者說話的聲音
 ## 注意事項
 - 因為我們的變聲器在iLBC才有用，所以打電話的人要把 iLBC 優先度調到最高
 
 ## 使用步驟
-
-1. 在command line中選擇cv(Change voice)的選項按下Enter
-2. 選擇想要的聲音並輸入他的編號後按Enter
-    
-<img width="338" alt="image" src="https://github.com/Ziling0316/PJSUA/assets/104045895/c19038ab-13ae-4d51-85e6-9501cefa1426">
-
-    
-3. 按下m並且輸入通話對象的IP address及port number
-4. 即可用變化後的聲音開始通話
+1. 使用者輸入聲音選項到frequency_index變數裡面後進行程式的重新編譯    
+2. 按下m並且輸入通話對象的IP address及port number
+3. 即可用變化後的聲音開始通話
 
 ## 程式說明(額外增加的部分)
 
 - 修改檔案：encode.c
-- 將使用者輸入的聲音選項儲存到以下global variable當中，default值為1
+- 使用者將輸入的聲音選項儲存到以下global variable當中，default值為1
 
 ```cpp
 int frequency_index = 1
